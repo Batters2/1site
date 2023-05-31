@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+  
+.video-bg {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center ;
+  align-items: 0;
+  position: relative;
+}
+
+.video-bg video {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0 px;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+.effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0);
+
+}
+.menu{
+  position: relative;
+  right: 1600px;
+}
+.accessories{
+  position: relative;
+  right: 1400px;
+}
+.wishlist{
+  position: relative;
+    right: 500px;
+}
+.information{
+  position: relative;
+    right: 500px;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.logo {
+  color: rgb(255, 0, 0);
+  font-size: 37px;
+  user-select: none;
+}
+span{
+  color: #ffffff;
+
+}
+header{
+  position: fixed;
+  left: 900px;
+  width: 100%;
+  padding: 20px 100 px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.navigation a {
+  position: relative;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a { 
+position: relative;
+cursor: pointer;
+font-size: 24px;
+text-decoration: none;
+}
+.navigation a::after {
+display: block;
+position: absolute;
+right: 0;
+bottom: -6px;
+width: 0;
+height: 3px;
+background-color: rgb(255, 255, 255);
+content: "";
+transition: width 1s;
+}
+
+.navigation a:hover:after {
+width: 100%;
+display: block;
+position: absolute;
+left: 0;
+bottom: -6px;
+height: 3px;
+background-color: rgb(255, 255, 255);
+content: "";
+transition: width 0.5s;
+}
+
+.navigation .Bag{
+  position: relative;
+  right: 500px;
+  width: 100px;
+  height: 50 px;
+  background: transparent;
+  border: 2px solid #fffdfd;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fcf7f7;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+} 
+  
+.navigation .Bag:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
